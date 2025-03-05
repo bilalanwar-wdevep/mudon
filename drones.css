@@ -1,0 +1,32 @@
+.offline{
+    color :#FF0000;
+}
+.online{
+    color:#81FF76;
+   
+}
+.parked{
+    color: #FFE500;
+}
+.batStatus{
+    font-size: 3em;
+}
+.batrbg{
+    background-color: #0D121F;
+   
+}
+.bg-full{
+    background:#81FF76 !important;
+
+}
+.bg-half{
+    background:#FFE500 !important;
+
+}
+.bg-low{
+    background:#FF0000 !important;
+
+}
+.bg-empty{
+    background:#2A344C !important;
+}
