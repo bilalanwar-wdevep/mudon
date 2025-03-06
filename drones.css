@@ -30,3 +30,13 @@
 .bg-empty{
     background:#2A344C !important;
 }
+.cust-gray{
+    color: #494E5D;
+}
+.qss-btn{
+    background:#0D121F
+}
+.bcolor{
+    color: #494E5D;
+    border-bottom:1px solid #494E5D;
+}

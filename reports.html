@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./mudon.css">
+    <link rel="stylesheet" href="./reports.css">
+
+</head>
+<body>
+    <div class="container-fluid vh-100 d-flex flex-column padded-container">
+        <!-- header start -->
+        <div class="row header shadows bg-section p-2 mb-2 align-items-center ">
+            <div class="col-2 d-flex align-items-center">
+                <img src="./images/qss.png" alt="Logo" class="img-fluid" style="max-height: 50px;">
+            </div>
+            <div class="col-7 d-flex ">
+                <button class="btn cont-btn selected mx-1"> Overview</button>
+                <button class="btn cont-btn mx-1">Map View</button>
+                <button class="btn cont-btn mx-1">All Drones</button>
+                <button class="btn cont-btn mx-1">Controller</button>
+                <button class="btn cont-btn mx-1">Reports</button>
+            </div>
+            <div class="col-3 d-flex justify-content-end">
+                <div class="dropdown">
+                    <img src="./images/user.png" alt="Profile" class="img-fluid rounded-circle" style="max-height: 50px; cursor: pointer;">
+                  
+                </div>
+            </div>
+        </div>
+        <!-- header end -->
+        
+        <!-- analysis title start -->
+         <div class="row">
+            <div class="col-lg-12 col-xl-12 col-md-12 d-flex justify-content-between bg-section">
+                <div class="py-3">
+                    <h6 class="cust-gray">Collected Data</h6>
+                    <h3 class="font-bold pb-3">Analysis Reports</h3>
+                    <p class="d-inline border-bottom  pb-2">Data Tables</p>
+                    <p class="d-inline bcolor mx-4  pb-2">Visual Charts</p>
+               </div>
+               <div class="pt-4 px-4 ">
+                    <div class="btn qss-btn text-white"><img src="./images/add.png" alt="" class="img-fluid px-2">Report</div>
+               </div>
+            </div>
+         </div>
+        <!-- analysis title end -->
+         <!-- analysis title start -->
+         <div class="row my-2">
+            <div class="col-lg-12 col-xl-12 col-md-12 d-flex justify-content-between align-items-center bg-section">
+                <div class="row w-100">
+                    <div class="col-lg-12 p-3 d-flex  justify-content-around align-items-center ">
+                        <div>
+                            <h6 class="m-0"><img src="./images/ddown.png" alt="" class="img-fluid pe-2">Average Event Change</h6>
+                        </div>
+                       
+                        <div class="dropdown  ms-auto">
+                            <button class="btn text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             April 2025
+                            </button>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2  w-auto ps-5 mb-4 d-inline-block" style="border-right: 1px solid white;">
+                        <p class="m-0">Since Last Month</p>
+                        <h2 class="m-0">18<span class="ps-1" style="font-size:0.8em;">%</span><img src="./images/down.png" alt="" class="img-fluid"></h2>                 
+                    </div>
+                    <div class="col-lg-2  w-auto px-3 mb-4 d-inline-block" style="border-right: 1px solid white;">
+                        <p class="m-0">Since Last Week</p>
+                        <h2 class="m-0">62<span class="ps-1" style="font-size:0.8em;">%</span><img src="./images/up.png" alt="" class="img-fluid"></h2>
+                                        
+                    </div>
+                    <div class="col-lg-2  w-auto px-3 mb-2 d-inline-block">
+                        <p class="m-0">Total Scans</p>
+                        <h2 class="m-0">241</h2>             
+                    </div>
+                </div>
+
+            </div>
+         </div>
+        <!-- analysis title end -->
+         <!-- reports table start-->
+            <div class="row bg-section p-2">
+                <div class="col-lg-12 border-bottom p-2">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <h5>Reports List</h5>
+                        </div>
+                        <div class="col-lg-4 text-end search-container">
+                            <img src="./images/search.png" alt="Search" class="img-fluid search-icon ">
+                            <input type="search" placeholder="Search Reports Here" class="search-input">
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-lg-12 col-xl-12 col-md-12  p-2">
+                  
+                    <div class="table-responsive">
+                        <table class="table" >
+                            <thead>
+                                <tr>
+                                    <th scope="col">Event Name</th>
+                                    <th scope="col">Event Type</th>
+                                    <th scope="col">Response Status</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Detection Rate</th>
+                                  
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Drone 1</td>
+                                    <td>Location 1</td>
+                                    <td>12/12/2025</td>
+                                    <td>12:00 PM</td>
+                                    <td>Event 1</td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>Drone 2</td>
+                                    <td>Location 2</td>
+                                    <td>12/12/2025</td>
+                                    <td>12:00 PM</td>
+                                    <td>Event 2</td>
+                                    
+                                </tr>
+                              
+                            </tbody>
+                        </table>
+                    </div>
+         <!-- reports table end-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".search-icon").click(function () {
+                $(".search-input").toggleClass("active").show().focus();
+            });
+    
+            $(document).click(function (event) {
+                if (!$(event.target).closest(".search-input, .search-icon").length) {
+                    $(".search-input").removeClass("active");
+                }
+            });
+        });
+    </script>
+    
+
+</body>
+</html>
