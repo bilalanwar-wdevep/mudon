@@ -46,3 +46,74 @@
     z-index: 2;
     position: relative;
 }
+.cust-font{
+    font-size: 0.8em;
+}
+.cust-font:hover{
+    cursor: pointer;
+}
+.table-text{
+    font-size: 0.9em !important;
+}
+/* Container for images */
+.viewReport {
+    position: relative;
+    display: inline-block;
+    margin: 5px; /* Optional: space between the images */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    border-radius: 50%;
+}
+
+.find-report {
+    color: white;
+    border:0px;
+    width:150px;
+  
+    background: #101625;
+    box-shadow: 0px 14px 16px 2A344C; /* Box shadow */
+}
+.find-report:focus {
+    background: #101625 !important; /* Ensures background stays dark */
+    color: white !important; /* Keeps text white */
+    outline: none; /* Optional: Removes default browser focus outline */
+}
+.find-report:hover{
+    cursor: pointer;
+}
+/* Change calendar icon color */
+.find-report::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Inverts the color of the calendar icon */
+}
+.bg-modal{
+    background: #101625 !important; 
+   
+}
+
+
+/* form */
+.form {
+    /* background-color: #15172b; */
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 320px;
+  }
+  
+
+  .input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  .border-bottom-qss{
+    border-bottom: 1px solid #3c3d49;
+  }
+  

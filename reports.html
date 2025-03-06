@@ -11,7 +11,45 @@
 
 </head>
 <body>
-    <div class="container-fluid vh-100 d-flex flex-column padded-container">
+  
+        <div class="container-fluid vh-100 d-flex flex-column padded-container">
+   
+            <!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog bg-modal modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body bg-modal">
+                <div class="form">
+                    <div class="title">Welcome</div>
+                    <div class="subtitle">Let's create your account!</div>
+                    <div class="input-container ic1">
+                      <input id="firstname" class="input" type="text" placeholder=" " />
+                      <div class="cut"></div>
+                      <label for="firstname" class="placeholder">First name</label>
+                    </div>
+                    <div class="input-container ic2">
+                      <input id="lastname" class="input" type="text" placeholder=" " />
+                      <div class="cut"></div>
+                      <label for="lastname" class="placeholder">Last name</label>
+                    </div>
+                    <div class="input-container ic2">
+                      <input id="email" class="input" type="text" placeholder=" " />
+                      
+                      <label for="email" class="placeholder">Email</label>
+                    </div>
+                   
+                  </div>
+            </div>
+            <div class="modal-footer bg-modal">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
         <!-- header start -->
         <div class="row header shadows bg-section p-2 mb-2 align-items-center ">
             <div class="col-2 d-flex align-items-center">
@@ -34,38 +72,39 @@
         <!-- header end -->
         
         <!-- analysis title start -->
-         <div class="row">
+         <!-- <div class="row">
             <div class="col-lg-12 col-xl-12 col-md-12 d-flex justify-content-between bg-section">
-                <div class="py-3">
-                    <h6 class="cust-gray">Collected Data</h6>
-                    <h3 class="font-bold pb-3">Analysis Reports</h3>
-                    <p class="d-inline border-bottom  pb-2">Data Tables</p>
-                    <p class="d-inline bcolor mx-4  pb-2">Visual Charts</p>
+                <div class="d-flex align-items-center justify-content-between w-100 p-2">
+         
+                    <h4 class="font-bold pb-2">Analysis Reports</h4>
+             
+                    <div class="btn qss-btn text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./images/add.png" alt="" class="img-fluid px-2" >Report</div>
                </div>
-               <div class="pt-4 px-4 ">
-                    <div class="btn qss-btn text-white"><img src="./images/add.png" alt="" class="img-fluid px-2">Report</div>
-               </div>
+              
             </div>
-         </div>
+         </div> -->
         <!-- analysis title end -->
          <!-- analysis title start -->
          <div class="row my-2">
             <div class="col-lg-12 col-xl-12 col-md-12 d-flex justify-content-between align-items-center bg-section">
                 <div class="row w-100">
-                    <div class="col-lg-12 p-3 d-flex  justify-content-around align-items-center ">
-                        <div>
-                            <h6 class="m-0"><img src="./images/ddown.png" alt="" class="img-fluid pe-2">Average Event Change</h6>
-                        </div>
-                       
-                        <div class="dropdown  ms-auto">
-                            <button class="btn text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                             April 2025
-                            </button>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                    <div class="col-lg-12 p-2 ">
+                        <div class="row">
+                            <div class="col-lg-12 d-flex align-items-center justify-content-between">
+                                <h4 class="font-bold pb-2">Analysis Reports</h4>
+                                <div class="d-flex">                                    
+                                    <input type="date" id="startDate" class=" form-control form-control find-report p-2" >
+                                    <button class="btn qss-btn text-white ms-2 p-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./images/add.png" alt="" class="img-fluid px-2" >Report</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <h6 class="m-0"><img src="./images/ddown.png" alt="" class="img-fluid pe-2">Average Event Change</h6>
+                                <!-- <div class="ms-auto d-flex align-items-center">
+                                    <input type="date" id="startDate" class=" form-control form-control find-report p-2" >
+                                    <div class="btn qss-btn text-white ms-2 p-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./images/add.png" alt="" class="img-fluid px-2" >Report</div>
+                                </div> -->
+                                
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-2  w-auto ps-5 mb-4 d-inline-block" style="border-right: 1px solid white;">
@@ -86,9 +125,9 @@
             </div>
          </div>
         <!-- analysis title end -->
-         <!-- reports table start-->
-            <div class="row bg-section p-2">
-                <div class="col-lg-12 border-bottom p-2">
+         <div class="row bg-section p-2" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+            <div class="col-lg-12">
+                <div class="col-lg-12 border-bottom-qss p-2 p-0 ">
                     <div class="row d-flex justify-content-between">
                         <div class="col-lg-4">
                             <h5>Reports List</h5>
@@ -101,10 +140,15 @@
                         
                     </div>
                 </div>
-                <div class="col-lg-12 col-xl-12 col-md-12  p-2">
+            </div>
+         </div>
+         <!-- reports table start-->
+         <div class="row bg-section p-2 flex-grow-1 overflow-auto"  style="border-top-left-radius: 0px; border-top-right-radius: 0px;">
+  
+               <div class="col-lg-12 col-xl-12 col-md-12 flex-fill overflow-auto p-2">
                   
                     <div class="table-responsive">
-                        <table class="table" >
+                        <table class="table table-text" >
                             <thead>
                                 <tr>
                                     <th scope="col">Event Name</th>
@@ -112,31 +156,67 @@
                                     <th scope="col">Response Status</th>
                                     <th scope="col">Location</th>
                                     <th scope="col">Detection Rate</th>
+                                    <th scope="col">View</th>
+                                    <th scope="col">Delete</th>
                                   
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Drone 1</td>
-                                    <td>Location 1</td>
-                                    <td>12/12/2025</td>
-                                    <td>12:00 PM</td>
-                                    <td>Event 1</td>
-                                
+                                    <td>Gas Emission</td>
+                                    <td class="text-danger">High Priority</td>
+                                    <td>Successfull</td>
+                                    <td>Western Riyadh</td>
+                                    <td>10% <img src="./images/up.png" alt=""></td>
+                                    <td>
+                                        <img src="./images/view.png" alt="" class="viewReport img-fluid">
+                                        
+                                    </td>
+                                    <td >
+                                        
+                                        <img src="./images/trash.png" alt="" class="viewReport img-fluid">
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Drone 2</td>
-                                    <td>Location 2</td>
-                                    <td>12/12/2025</td>
-                                    <td>12:00 PM</td>
-                                    <td>Event 2</td>
+                                    <td>Street Pothole</td>
+                                    <td class="text-warning">High Priority</td>
+                                    <td>Unsuccessfull</td>
+                                    <td>Eastern Riyadh</td>
+                                    <td>No change</td>
+                                    <td >
+                                        <img src="./images/view.png" alt="" class="viewReport img-fluid">
+                                        
+                                    </td>
+                                    <td >
+                                        
+                                        <img src="./images/trash.png" alt="" class="viewReport img-fluid">
+                                    </td>
+
+                                </tr>
+                                <tr class="">
+                                    <td>Street Pothole</td>
+                                    <td class="textsuccess">High Priority</td>
+                                    <td>Unsuccessfull</td>
+                                    <td>Eastern Riyadh</td>
+                                    <td >99% <img src="./images/down.png" alt=""></td>
+                                    <td >
+                                        <img src="./images/view.png" alt="" class="viewReport img-fluid">
+                                        
+                                    </td>
+                                    <td >
+                                        
+                                        <img src="./images/trash.png" alt="" class="viewReport img-fluid">
+                                    </td>
                                     
                                 </tr>
-                              
+                                
+                                
                             </tbody>
                         </table>
                     </div>
+                    </div>
          <!-- reports table end-->
+      
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

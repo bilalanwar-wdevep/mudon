@@ -1,13 +1,4 @@
-.offline{
-    color :#FF0000;
-}
-.online{
-    color:#81FF76;
-   
-}
-.parked{
-    color: #FFE500;
-}
+
 .batStatus{
     font-size: 3em;
 }
@@ -29,14 +20,4 @@
 }
 .bg-empty{
     background:#2A344C !important;
-}
-.cust-gray{
-    color: #494E5D;
-}
-.qss-btn{
-    background:#0D121F
-}
-.bcolor{
-    color: #494E5D;
-    border-bottom:1px solid #494E5D;
 }
