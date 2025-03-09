@@ -14,42 +14,80 @@
   
         <div class="container-fluid vh-100 d-flex flex-column padded-container">
    
+      
             <!-- Modal -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog bg-modal modal-lg">
-        <div class="modal-content">
-
-            <div class="modal-body bg-modal">
-                <div class="form">
-                    <div class="title">Welcome</div>
-                    <div class="subtitle">Let's create your account!</div>
-                    <div class="input-container ic1">
-                      <input id="firstname" class="input" type="text" placeholder=" " />
-                      <div class="cut"></div>
-                      <label for="firstname" class="placeholder">First name</label>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog bg-modal modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body bg-modal">
+                            <div class="row">
+                                <!-- First Column: Form Fields -->
+                                <div class="col-lg-6">
+                                    <div class="form">
+                                        <div class="title">
+                                            <h3>New Reports</h3>
+                                        </div>
+                        
+                                        <div class="input-container">
+                                            <label for="startDate">Start Date</label>
+                                            <input id="startDate" name="startDate" class="report-input" type="date" />
+                                        </div>
+                        
+                                        <div class="input-container">
+                                            <label for="endDate">End Date</label>
+                                            <input id="endDate" name="endDate" class="report-input" type="date" />
+                                        </div>
+                                        <div class="input-container">
+                                            <label for="area">Area</label>
+                                            <select id="area" name="area" class="report-input">
+                                                <option value="" disabled selected>Select Area</option>
+                                                <option value="eastern">Eastern Region</option>
+                                                <option value="western">Western Region</option>
+                                                <option value="center">Center Region</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-container">
+                                            <label for="inspectionType">Inspection Type</label>
+                                            <select id="inspectionType" name="inspectionType" class="report-input">
+                                                <option value="" disabled selected>Select Inspection Type</option>
+                                                <option value="gas_leakage">Gas Leakage</option>
+                                                <option value="cracks">Cracks</option>
+                                                <option value="structural_damage">Structural Damage</option>
+                                                <option value="water_leakage">Water Leakage</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                        
+                                        
+                                        <div class="input-container">
+                                            <label for="videoUpload" class="upload-label">Click to Upload Video</label>
+                                            <input type="file" id="videoUpload" name="videoUpload" accept="video/*" hidden />
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 d-flex justify-content-center align-items-center ">
+                                    <div class="mt-4 d-flex align-items-center justify-content-center upl-video  p-4">
+                                      <h4>Click To Upload Video</h4>
+                                      <input type="file" id="videoInput" accept="video/*" style="display: none;">
+                                      <video id="videoPreview" style="display: none; max-width: 100%; border-radius: 12px;" controls></video>
+                                    </div>
+                                  </div>
+                                  
+                             
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="modal-footer bg-modal">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
                     </div>
-                    <div class="input-container ic2">
-                      <input id="lastname" class="input" type="text" placeholder=" " />
-                      <div class="cut"></div>
-                      <label for="lastname" class="placeholder">Last name</label>
-                    </div>
-                    <div class="input-container ic2">
-                      <input id="email" class="input" type="text" placeholder=" " />
-                      
-                      <label for="email" class="placeholder">Email</label>
-                    </div>
-                   
-                  </div>
+                </div>
             </div>
-            <div class="modal-footer bg-modal">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
-
+            
+        <!-- Modal -->
         <!-- header start -->
         <div class="row header shadows bg-section p-2 mb-2 align-items-center ">
             <div class="col-2 d-flex align-items-center">
@@ -71,19 +109,7 @@
         </div>
         <!-- header end -->
         
-        <!-- analysis title start -->
-         <!-- <div class="row">
-            <div class="col-lg-12 col-xl-12 col-md-12 d-flex justify-content-between bg-section">
-                <div class="d-flex align-items-center justify-content-between w-100 p-2">
-         
-                    <h4 class="font-bold pb-2">Analysis Reports</h4>
-             
-                    <div class="btn qss-btn text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./images/add.png" alt="" class="img-fluid px-2" >Report</div>
-               </div>
-              
-            </div>
-         </div> -->
-        <!-- analysis title end -->
+
          <!-- analysis title start -->
          <div class="row my-2">
             <div class="col-lg-12 col-xl-12 col-md-12 d-flex justify-content-between align-items-center bg-section">
@@ -99,10 +125,7 @@
                             </div>
                             <div class="col-lg-12">
                                 <h6 class="m-0"><img src="./images/ddown.png" alt="" class="img-fluid pe-2">Average Event Change</h6>
-                                <!-- <div class="ms-auto d-flex align-items-center">
-                                    <input type="date" id="startDate" class=" form-control form-control find-report p-2" >
-                                    <div class="btn qss-btn text-white ms-2 p-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./images/add.png" alt="" class="img-fluid px-2" >Report</div>
-                                </div> -->
+
                                 
                             </div>
                         </div>
@@ -201,10 +224,8 @@
                                     <td >99% <img src="./images/down.png" alt=""></td>
                                     <td >
                                         <img src="./images/view.png" alt="" class="viewReport img-fluid">
-                                        
                                     </td>
                                     <td >
-                                        
                                         <img src="./images/trash.png" alt="" class="viewReport img-fluid">
                                     </td>
                                     
@@ -225,10 +246,16 @@
             $(".search-icon").click(function () {
                 $(".search-input").toggleClass("active").show().focus();
             });
-    
-            $(document).click(function (event) {
-                if (!$(event.target).closest(".search-input, .search-icon").length) {
-                    $(".search-input").removeClass("active");
+            $('.upl-video').click(function() {
+                $('#videoInput').click();
+            });
+
+            // Show video preview when a file is selected
+            $('#videoInput').change(function(event) {
+                var file = event.target.files[0]; // Get the selected file
+                if (file && file.type.startsWith('video/')) {
+                var videoURL = URL.createObjectURL(file); // Create URL for the video file
+                $('#videoPreview').attr('src', videoURL).show(); // Set video source and display it
                 }
             });
         });
